@@ -1,0 +1,48 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+}
+
+.content {
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  padding: 0 24px;
+}
+
+.logo {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 2rem;
+  font-family: var(--font-heading);
+}
+
+.progressWrapper {
+  width: 100%;
+  height: 2px;
+  background-color: var(--border);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progressBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--accent);
+  transition: width 0.2s ease-out;
+}
+
+.percentage {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  opacity: 0.6;
+}
